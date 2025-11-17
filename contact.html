@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Karolina Bravo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">KB</div>
+        <span>Karolina Bravo</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="data-projects.html">Data Projects</a>
+        <a href="digital-creator.html">Digital Creator</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="about-me.html">About me</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <button class="nav-cta" onclick="window.location.href='contact.html'">
+        Let’s work together
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="contact-main">
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- COLUMNA IZQUIERDA: INFO -->
+        <div class="card contact-intro">
+          <p class="section-kicker">Contact</p>
+          <h1 class="section-title" style="font-size:1.7rem; margin-bottom:0.8rem;">
+            Let’s talk about your project
+          </h1>
+          <p class="section-subtitle" style="margin-bottom:1.5rem;">
+            Tell me about your data, tourism analytics or UGC needs and I’ll get back to you.
+            I usually respond within 24–48 hours.
+          </p>
+
+          <div class="contact-highlights">
+            <div class="contact-highlight">
+              <span class="contact-highlight-label">Response time</span>
+              <span class="contact-highlight-value">24–48 h</span>
+            </div>
+            <div class="contact-highlight">
+              <span class="contact-highlight-label">Collaboration</span>
+              <span class="contact-highlight-value">Remote · Worldwide</span>
+            </div>
+            <div class="contact-highlight">
+              <span class="contact-highlight-label">Projects</span>
+              <span class="contact-highlight-value">Data · BI · UGC</span>
+            </div>
+          </div>
+
+          <div class="contact-cards">
+            <div class="contact-mini-card">
+              <h3>Direct email</h3>
+              <p>For collaborations, briefs or questions:</p>
+              <a href="mailto:karolinabravo15@gmail.com">karolinabravo15@gmail.com</a>
+            </div>
+
+            <div class="contact-mini-card">
+              <h3>Social media</h3>
+              <p>DM me on your favourite platform:</p>
+              <div class="contact-social-links">
+                <a href="https://www.tiktok.com/@soykarolinabravo" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/soykarolinabravo" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/@soykarolinabravo" target="_blank">YouTube</a>
+                <a href="https://www.linkedin.com/in/karolinabravo" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: FORMULARIO -->
+        <div class="form-card">
+          <h2 class="section-title" style="margin-bottom:1rem;">Send a message</h2>
+          <p class="section-subtitle" style="margin-bottom:1.5rem;">
+            Share a bit about your project, brand or idea so I can understand how to help you.
+          </p>
+
+          <form class="contact-form" action="mailto:karolinabravo15@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@email.com" />
+            </div>
+
+            <div class="form-row">
+              <label for="topic">Project type</label>
+              <select id="topic" name="topic">
+                <option value="data">Data / BI / Tourism Analytics</option>
+                <option value="ugc">UGC · Content Creation</option>
+                <option value="both">Both · Data + UGC</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required
+                placeholder="Tell me about your project, timeline, budget or goals..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">
+              Send message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-column-title">Karolina Bravo</p>
+        <p>Data & Tourism Analytics · Digital Creator</p>
+      </div>
+
+      <div>
+        <p class="footer-column-title">Navigate</p>
+        <div class="footer-links">
+          <a href="data-projects.html">Data Projects</a>
+          <a href="digital-creator.html">Digital Creator</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="resources.html">Resources</a>
+          <a href="about.me.html">About me</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-column-title">Connect</p>
+        <div class="footer-links">
+          <a href="https://www.tiktok.com/@soykarolinabravo" target="_blank">TikTok</a>
+          <a href="https://www.instagram.com/soykarolinabravo" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@soykarolinabravo" target="_blank">YouTube</a>
+          <a href="https://www.linkedin.com/in/karolinabravo" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
