@@ -663,6 +663,20 @@ img {
   gap: 0.35rem;
 }
 
+.skills-group {
+  padding: 0.7rem 0.9rem;
+}
+
+.skills-group:hover {
+  border-color: rgba(56,189,248,0.35);
+  transform: translateY(-2px);
+  transition: 0.25s ease;
+}
+
+.skills-group {
+  border: 1px solid rgba(148,163,184,0.14);
+}
+
 /* Responsive para skills */
 
 @media (max-width: 880px) {
