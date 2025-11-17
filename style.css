@@ -1,0 +1,260 @@
+:root {
+  --bg: #f7f2f0;
+  --bg-card: #ffffff;
+  --accent: #d49fbf;      /* rosa nude */
+  --accent-soft: #f1dce8;
+  --text-main: #1f1f23;
+  --text-muted: #6f6f78;
+  --border-soft: #e3d9d3;
+  --shadow-soft: 0 18px 45px rgba(15, 13, 23, 0.08);
+  --radius-xl: 24px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #fbeff7 0, #f7f2f0 45%, #f5f4f9 100%);
+  color: var(--text-main);
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 6vw;
+  backdrop-filter: blur(16px);
+  background: rgba(247, 242, 240, 0.8);
+  border-bottom: 1px solid rgba(227, 217, 211, 0.7);
+}
+
+.nav-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent), #b98ec4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 18px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.nav-links a:hover {
+  color: var(--text-main);
+}
+
+/* HERO */
+
+.hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 6vw 20px;
+}
+
+.hero-content {
+  max-width: 780px;
+  padding: 34px 32px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 32px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 14px 0 8px;
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  margin: 0 0 20px;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.hero-note {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, var(--accent), #b98ec4);
+  color: white;
+}
+
+.btn.ghost {
+  background: transparent;
+  border-color: var(--border-soft);
+  color: var(--text-main);
+}
+
+.btn.primary:hover,
+.btn.ghost:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 40px 6vw;
+}
+
+.section-header h2,
+.section > h2 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+.section-header p,
+.section-text {
+  margin: 0 0 18px;
+  color: var(--text-muted);
+  max-width: 650px;
+}
+
+/* CARDS GRID */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 18px 18px 16px;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.02);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0 0 10px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.pill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pill-list li {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f3edf0;
+  font-size: 0.8rem;
+  color: #5c4c57;
+}
+
+.card-links a {
+  font-size: 0.86rem;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #6b4f82;
+}
+
+.card-links a:hover {
+  text-decoration: underline;
+}
+
+/* CONTACTO */
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 16px 6vw 24px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 720px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .nav-links a {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+  .hero-content {
+    padding: 26px 20px 30px;
+  }
+}
