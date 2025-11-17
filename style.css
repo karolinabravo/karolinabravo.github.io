@@ -809,3 +809,58 @@ img {
     align-items: flex-start;
   }
 }
+
+/* ===============================
+   ABOUT ME
+================================= */
+
+.about-hero {
+  padding-top: 4rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.3fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.about-list {
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.about-list li {
+  list-style: disc;
+  margin-bottom: 0.25rem;
+}
+
+.about-side-card {
+  padding: 1.4rem 1.2rem;
+}
+
+.about-side-item {
+  margin-bottom: 0.9rem;
+}
+
+.about-label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+}
+
+.about-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+
+@media (max-width: 880px) {
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
