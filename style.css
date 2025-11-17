@@ -999,3 +999,35 @@ img {
     flex-direction: column;
   }
 }
+
+/* ===== Improve spacing on Portfolio page ===== */
+
+.portfolio-page {
+    min-height: 80vh;           /* hace que ocupe casi toda la pantalla */
+    display: flex;
+    align-items: center;        /* centra verticalmente */
+    justify-content: center;    /* centra horizontalmente */
+}
+
+.two-portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+/* Buttons already fixed but we add a little elevation */
+.portfolio-big-btn {
+    margin: 0 10px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+    .portfolio-page {
+        min-height: 70vh;
+    }
+    .two-portfolio-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
