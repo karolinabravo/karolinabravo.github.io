@@ -145,6 +145,58 @@ ul {
   transform: translateY(-1px);
   box-shadow: 0 16px 40px rgba(56, 189, 248, 0.75);
 }
+/* Dropdown base */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.dropbtn:hover {
+  color: var(--text-main);
+}
+
+/* Contenedor del menú */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-lg);
+  min-width: 160px;
+  padding: 0.5rem 0;
+  z-index: 200;
+}
+
+/* Links dentro del menú */
+.dropdown-content a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+  background: rgba(148, 163, 184, 0.08);
+  color: var(--accent-soft);
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* -------- HERO -------- */
 
