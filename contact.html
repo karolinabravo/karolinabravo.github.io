@@ -111,7 +111,8 @@
             Share a bit about your project, brand or idea so I can understand how to help you.
           </p>
 
-          <form class="contact-form" action="mailto:karolinabravo15@gmail.com" method="post" enctype="text/plain">
+          <!-- FORMULARIO CON FORMSPREE -->
+          <form action="https://formspree.io/f/xldaqrpg" method="POST" class="contact-form">
             <div class="form-row">
               <label for="name">Full name</label>
               <input id="name" name="name" type="text" required placeholder="Your name" />
@@ -124,11 +125,11 @@
 
             <div class="form-row">
               <label for="topic">Project type</label>
-              <select id="topic" name="topic">
-                <option value="data">Data / BI / Tourism Analytics</option>
-                <option value="ugc">UGC · Content Creation</option>
-                <option value="both">Both · Data + UGC</option>
-                <option value="other">Other</option>
+              <select id="topic" name="project_type">
+                <option value="Data / BI / Tourism Analytics">Data / BI / Tourism Analytics</option>
+                <option value="UGC · Content Creation">UGC · Content Creation</option>
+                <option value="Both · Data + UGC">Both · Data + UGC</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
@@ -142,6 +143,34 @@
               Send message
             </button>
           </form>
+
+          <!-- MENSAJE DE ÉXITO -->
+          <p id="form-success" style="display:none; color:#4cf3c0; margin-top:1rem;">
+            ✔️ Your message has been sent successfully! I'll get back to you soon.
+          </p>
+
+          <!-- SCRIPT PARA MOSTRAR EL MENSAJE SIN CAMBIAR DE PÁGINA -->
+          <script>
+            const form = document.querySelector(".contact-form");
+            const success = document.getElementById("form-success");
+
+            form.addEventListener("submit", async (e) => {
+              e.preventDefault();
+              const data = new FormData(form);
+
+              const response = await fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+              });
+
+              if (response.ok) {
+                form.reset();
+                success.style.display = "block";
+              }
+            });
+          </script>
+
         </div>
 
       </div>
