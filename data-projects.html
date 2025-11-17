@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Projects | Karolina Bravo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">KB</div>
+        <span>Karolina Bravo</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="data-projects.html" class="active">Data Projects</a>
+        <a href="digital-creator.html">Digital Creator</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="about-me.html">About me</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="nav-cta" onclick="window.location.href='contact.html'">
+        Let’s work together
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO DATA PROJECTS -->
+    <section class="section data-hero">
+      <div class="container">
+        <p class="section-kicker">Data Projects</p>
+        <h1 class="section-title" style="font-size:1.8rem; margin-bottom:0.6rem;">
+          Tourism & business analytics projects
+        </h1>
+        <p class="section-subtitle" style="max-width:40rem;">
+          End-to-end analytics projects focused on tourism, hospitality and business:
+          from cleaning open data sources to forecasting demand and building dashboards
+          ready for decision-making.
+        </p>
+
+        <div class="pill-group">
+          <span class="pill pill-active">Tourism & Hospitality</span>
+          <span class="pill">Business & BI</span>
+          <span class="pill">Machine Learning & Forecasting</span>
+          <span class="pill">Python</span>
+          <span class="pill">Power BI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOURISM & HOSPITALITY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Tourism & Hospitality</p>
+          <h2 class="section-title">Tourism demand & hotel analytics</h2>
+          <p class="section-subtitle">
+            Projects using AENA, INE, Dataestur and other open data sources to
+            understand and forecast tourism behaviour in Barcelona.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-tag">Forecasting · Python · Power BI</span>
+            <h3 class="card-title">Barcelona Hotel Occupancy Forecast 2026</h3>
+            <p class="card-text">
+              End-to-end project combining hotel occupancy data, AENA passenger flows,
+              climate variables and events to forecast hotel demand in Barcelona.
+            </p>
+            <div class="card-meta">
+              <span>INE · AENA · Dataestur</span>
+              <span>Time series · Regression</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Exploratory Analysis</span>
+            <h3 class="card-title">AENA passenger trends & seasonality</h3>
+            <p class="card-text">
+              Analysis of passenger arrivals by origin, season and airport to detect
+              trends and seasonality that impact the tourism demand in Barcelona.
+            </p>
+            <div class="card-meta">
+              <span>Python · Pandas</span>
+              <span>Visual storytelling</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Tourism Insights</span>
+            <h3 class="card-title">Climate & tourism behaviour</h3>
+            <p class="card-text">
+              Study of how temperature and rainfall correlate with hotel occupancy
+              and tourist arrivals, using historical climate data.
+            </p>
+            <div class="card-meta">
+              <span>Weather APIs / AEMET</span>
+              <span>Correlation analysis</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS & BI DASHBOARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Business & BI</p>
+          <h2 class="section-title">Dashboards & performance tracking</h2>
+          <p class="section-subtitle">
+            Interactive dashboards to track revenue, occupancy, channel mix and
+            performance indicators for tourism and business stakeholders.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-tag">Power BI · DAX</span>
+            <h3 class="card-title">Hotel performance dashboard</h3>
+            <p class="card-text">
+              Dashboard to monitor occupancy, ADR and RevPAR for hotels over time,
+              with filters by market, channel and season.
+            </p>
+            <div class="card-meta">
+              <span>Power BI · Excel</span>
+              <span>KPI design</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Revenue & Sales</span>
+            <h3 class="card-title">Tourism revenue overview</h3>
+            <p class="card-text">
+              Report connecting tourism flows with spending data to estimate
+              revenue, average ticket and growth opportunities.
+            </p>
+            <div class="card-meta">
+              <span>Egatur · Frontur</span>
+              <span>Business analysis</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Operations</span>
+            <h3 class="card-title">Operational KPIs for hospitality</h3>
+            <p class="card-text">
+              KPI framework for hotel or tourism teams: check-in efficiency, booking
+              patterns, cancellation behaviour and channel optimization.
+            </p>
+            <div class="card-meta">
+              <span>SQL · Power BI</span>
+              <span>Reporting design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MACHINE LEARNING & FORECASTING -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">Machine Learning & Forecasting</p>
+          <h2 class="section-title">Predictive models & experiments</h2>
+          <p class="section-subtitle">
+            Experiments with regression models, time series and feature engineering
+            applied to tourism and business problems.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-tag">Python · Scikit-learn</span>
+            <h3 class="card-title">Demand prediction for hotel nights</h3>
+            <p class="card-text">
+              Model to predict future hotel nights using historical occupancy,
+              flight arrivals, climate indicators and calendar effects.
+            </p>
+            <div class="card-meta">
+              <span>Regression models</span>
+              <span>Feature engineering</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Experiment</span>
+            <h3 class="card-title">Scenario analysis & “what-if” simulations</h3>
+            <p class="card-text">
+              Simulation of different tourism scenarios (events, price changes,
+              demand shocks) to estimate impact on occupancy and revenue.
+            </p>
+            <div class="card-meta">
+              <span>Python · Notebooks</span>
+              <span>Scenario planning</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Coming soon</span>
+            <h3 class="card-title">Future ML experiments</h3>
+            <p class="card-text">
+              Space reserved for new models and case studies that will be added as
+              I continue exploring tourism & data science projects.
+            </p>
+            <div class="card-meta">
+              <span>In progress</span>
+              <span>2025</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-column-title">Karolina Bravo</p>
+        <p>Data & Tourism Analytics · Digital Creator</p>
+      </div>
+
+      <div>
+        <p class="footer-column-title">Navigate</p>
+        <div class="footer-links">
+          <a href="data-projects.html">Data Projects</a>
+          <a href="digital-creator.html">Digital Creator</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="resources.html">Resources</a>
+          <a href="about-me.html">About me</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-column-title">Connect</p>
+        <div class="footer-links">
+          <a href="https://www.tiktok.com/@soykarolinabravo" target="_blank">TikTok</a>
+          <a href="https://www.instagram.com/soykarolinabravo" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@soykarolinabravo" target="_blank">YouTube</a>
+          <a href="https://www.linkedin.com/in/karolinabravo" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
