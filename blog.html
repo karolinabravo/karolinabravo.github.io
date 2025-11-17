@@ -37,64 +37,194 @@
 <!-- MAIN -->
 <main>
 
-  <!-- HERO -->
-  <section class="section hero-blog center-text">
-    <div class="container">
-      <p class="section-kicker">Blog</p>
-      <h1 class="section-title">Insights, data stories & digital creation</h1>
-      <p class="section-subtitle">
-        A space where I share ideas about tourism analytics, data projects, UGC,
-        creator strategies and personal growth.
-      </p>
+  <!-- HERO + POST DESTACADO -->
+  <section class="section blog-hero">
+    <div class="container blog-hero-grid">
+
+      <!-- TEXTO -->
+      <div>
+        <p class="section-kicker">Blog</p>
+        <h1 class="section-title">
+          Data, tourism & digital content<br>through my lens.
+        </h1>
+        <p class="section-subtitle">
+          Stories, lessons and ideas from my journey as a tourism data analyst
+          and digital creator. From Barcelona hotel demand to UGC for beauty brands.
+        </p>
+
+        <div class="blog-hero-meta">
+          <span class="pill pill-active">Tourism analytics</span>
+          <span class="pill">Data career</span>
+          <span class="pill">UGC & creator</span>
+          <span class="pill">Personal growth</span>
+        </div>
+      </div>
+
+      <!-- POST DESTACADO -->
+      <article class="blog-featured-card">
+        <div class="blog-featured-image"></div>
+        <div class="blog-featured-content">
+          <span class="blog-tag">Featured · Tourism Analytics</span>
+          <h2 class="blog-featured-title">
+            Turning Barcelona tourism data into real decisions
+          </h2>
+          <p class="blog-featured-text">
+            Behind the scenes of my main project: how I combine AENA flights,
+            INE hotels and weather data to understand and forecast hotel demand
+            in Barcelona.
+          </p>
+          <button class="btn btn-outline blog-featured-btn"
+                  onclick="window.location.href='blog-post-1.html'">
+            Read the full story →
+          </button>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <!-- BLOG GRID -->
+  <!-- CARRUSEL DE ARTÍCULOS -->
   <section class="section">
-    <div class="container blog-grid">
+    <div class="container">
+      <div class="section-header blog-section-header">
+        <h2 class="section-title">Latest articles</h2>
+        <p class="section-subtitle">
+          Swipe through some recent posts about data, tourism, UGC and content creation.
+        </p>
+      </div>
 
-      <!-- ARTICLE 1 -->
-      <article class="blog-card">
-        <div class="blog-card-image"></div>
-        <div class="blog-card-content">
-          <span class="blog-tag">Tourism Analytics</span>
-          <h3 class="blog-card-title">How tourism data can predict hotel demand</h3>
-          <p class="blog-card-text">
-            A simple explanation of how open data from AENA, INE, Datatur and
-            more can be used to forecast occupancy trends.
-          </p>
-          <a class="blog-readmore" href="blog-post-1.html">Read article →</a>
+      <div class="blog-carousel-wrapper">
+        <button class="carousel-arrow left" onclick="scrollCarousel(-1)">‹</button>
+
+        <div class="blog-carousel" id="blogCarousel">
+          <!-- Slide 1 -->
+          <article class="blog-slide">
+            <div class="blog-slide-image blog-img-1"></div>
+            <div class="blog-slide-body">
+              <span class="blog-tag">Tourism Analytics</span>
+              <h3 class="blog-slide-title">
+                5 questions data can answer about hotel demand
+              </h3>
+              <p class="blog-slide-text">
+                Practical examples of how tourism data helps hotels make better
+                decisions on pricing, seasonality and marketing.
+              </p>
+              <a href="blog-post-1.html" class="blog-readmore">Read article →</a>
+            </div>
+          </article>
+
+          <!-- Slide 2 -->
+          <article class="blog-slide">
+            <div class="blog-slide-image blog-img-2"></div>
+            <div class="blog-slide-body">
+              <span class="blog-tag">Data Career</span>
+              <h3 class="blog-slide-title">
+                Building a data portfolio when you love tourism
+              </h3>
+              <p class="blog-slide-text">
+                How I’m designing my portfolio to mix tourism analytics,
+                forecasting and storytelling instead of generic datasets.
+              </p>
+              <a href="blog-post-2.html" class="blog-readmore">Read article →</a>
+            </div>
+          </article>
+
+          <!-- Slide 3 -->
+          <article class="blog-slide">
+            <div class="blog-slide-image blog-img-3"></div>
+            <div class="blog-slide-body">
+              <span class="blog-tag">UGC & Creator</span>
+              <h3 class="blog-slide-title">
+                What brands really look for in UGC creators
+              </h3>
+              <p class="blog-slide-text">
+                Lessons from real collaborations: what works, what doesn’t,
+                and how creators can stand out without thousands of followers.
+              </p>
+              <a href="blog-post-3.html" class="blog-readmore">Read article →</a>
+            </div>
+          </article>
+
+          <!-- Slide 4 -->
+          <article class="blog-slide">
+            <div class="blog-slide-image blog-img-4"></div>
+            <div class="blog-slide-body">
+              <span class="blog-tag">Personal</span>
+              <h3 class="blog-slide-title">
+                Studying, working, creating: finding a realistic balance
+              </h3>
+              <p class="blog-slide-text">
+                A more personal reflection on managing a data career, a master,
+                content creation and life in Barcelona at the same time.
+              </p>
+              <a href="blog-post-4.html" class="blog-readmore">Read article →</a>
+            </div>
+          </article>
         </div>
-      </article>
 
-      <!-- ARTICLE 2 -->
-      <article class="blog-card">
-        <div class="blog-card-image"></div>
-        <div class="blog-card-content">
-          <span class="blog-tag">Data Projects</span>
-          <h3 class="blog-card-title">Why every junior analyst should start with small projects</h3>
-          <p class="blog-card-text">
-            You don’t need huge datasets or fancy dashboards to build a strong
-            data portfolio. Here’s how to start small and grow fast.
-          </p>
-          <a class="blog-readmore" href="blog-post-2.html">Read article →</a>
-        </div>
-      </article>
+        <button class="carousel-arrow right" onclick="scrollCarousel(1)">›</button>
+      </div>
+    </div>
+  </section>
 
-      <!-- ARTICLE 3 -->
-      <article class="blog-card">
-        <div class="blog-card-image"></div>
-        <div class="blog-card-content">
-          <span class="blog-tag">UGC & Digital Creator</span>
-          <h3 class="blog-card-title">5 mistakes brands make when hiring UGC creators</h3>
-          <p class="blog-card-text">
-            A quick breakdown based on real collaborations, and how brands can
-            achieve better results with creators.
-          </p>
-          <a class="blog-readmore" href="blog-post-3.html">Read article →</a>
-        </div>
-      </article>
+  <!-- GRID "ALL POSTS" (PLANTILLA) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header blog-section-header">
+        <h2 class="section-title">All posts</h2>
+        <p class="section-subtitle">
+          A growing library of articles mixing tourism data, analytics,
+          digital content and my own journey.
+        </p>
+      </div>
 
+      <div class="blog-grid">
+        <!-- Puedes duplicar estas tarjetas y cambiar el contenido -->
+        <article class="blog-card">
+          <div class="blog-card-image blog-img-1"></div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Tourism Analytics</span>
+            <h3 class="blog-card-title">
+              Understanding seasonality in Barcelona with open data
+            </h3>
+            <p class="blog-card-text">
+              A simple breakdown of how I use AENA flights, INE hotels and
+              other sources to detect patterns in tourism demand.
+            </p>
+            <a class="blog-readmore" href="blog-post-1.html">Read article →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-image blog-img-2"></div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Data Projects</span>
+            <h3 class="blog-card-title">
+              From notebook to story: communicating your data work
+            </h3>
+            <p class="blog-card-text">
+              Tips on turning messy notebooks into clean narratives that
+              recruiters and clients can actually understand.
+            </p>
+            <a class="blog-readmore" href="blog-post-2.html">Read article →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-image blog-img-3"></div>
+          <div class="blog-card-content">
+            <span class="blog-tag">UGC & Creator</span>
+            <h3 class="blog-card-title">
+              How I plan UGC content for beauty & lifestyle brands
+            </h3>
+            <p class="blog-card-text">
+              My process to align briefs, hooks, scripts and aesthetics when
+              I create content for brands.
+            </p>
+            <a class="blog-readmore" href="blog-post-3.html">Read article →</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -132,6 +262,20 @@
     </div>
   </div>
 </footer>
+
+<!-- JS PARA EL CARRUSEL -->
+<script>
+  function scrollCarousel(direction) {
+    const el = document.getElementById('blogCarousel');
+    if (!el) return;
+    const card = el.querySelector('.blog-slide');
+    const cardWidth = card ? card.offsetWidth + 24 : 320;
+    el.scrollBy({
+      left: direction * cardWidth,
+      behavior: 'smooth'
+    });
+  }
+</script>
 
 </body>
 </html>
