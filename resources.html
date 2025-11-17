@@ -46,14 +46,15 @@
           data analysis, machine learning, BI dashboards, data engineering and tourism projects.
         </p>
 
-        <div class="pill-group">
-          <span class="pill pill-active">All</span>
-          <span class="pill">Data analysis</span>
-          <span class="pill">Python & ML</span>
-          <span class="pill">BI & dashboards</span>
-          <span class="pill">Data engineering</span>
-          <span class="pill">Tourism & open data</span>
-          <span class="pill">Learning</span>
+        <!-- PILLS FILTRO -->
+        <div class="pill-group filter-pills">
+          <button type="button" class="pill pill-active" data-filter="all">All</button>
+          <button type="button" class="pill" data-filter="analysis">Data analysis</button>
+          <button type="button" class="pill" data-filter="python-ml">Python & ML</button>
+          <button type="button" class="pill" data-filter="bi">BI & dashboards</button>
+          <button type="button" class="pill" data-filter="engineering">Data engineering</button>
+          <button type="button" class="pill" data-filter="tourism">Tourism & open data</button>
+          <button type="button" class="pill" data-filter="learning">Learning</button>
         </div>
       </div>
     </section>
@@ -63,7 +64,7 @@
       <div class="container resource-grid">
 
         <!-- DATA ANALYSIS -->
-        <article class="card resource-card">
+        <article class="card resource-card" data-category="analysis">
           <div class="resource-head">
             <div class="resource-icon">📊</div>
             <div>
@@ -95,7 +96,7 @@
         </article>
 
         <!-- PYTHON & ML -->
-        <article class="card resource-card">
+        <article class="card resource-card" data-category="python-ml">
           <div class="resource-head">
             <div class="resource-icon">🤖</div>
             <div>
@@ -124,7 +125,7 @@
         </article>
 
         <!-- BI & DASHBOARDS -->
-        <article class="card resource-card">
+        <article class="card resource-card" data-category="bi">
           <div class="resource-head">
             <div class="resource-icon">📈</div>
             <div>
@@ -153,7 +154,7 @@
         </article>
 
         <!-- DATA ENGINEERING -->
-        <article class="card resource-card">
+        <article class="card resource-card" data-category="engineering">
           <div class="resource-head">
             <div class="resource-icon">🛠️</div>
             <div>
@@ -185,7 +186,7 @@
         </article>
 
         <!-- TOURISM & OPEN DATA -->
-        <article class="card resource-card">
+        <article class="card resource-card" data-category="tourism">
           <div class="resource-head">
             <div class="resource-icon">✈️</div>
             <div>
@@ -217,7 +218,7 @@
         </article>
 
         <!-- LEARNING & CAREER -->
-        <article class="card resource-card">
+        <article class="card resource-card" data-category="learning">
           <div class="resource-head">
             <div class="resource-icon">📚</div>
             <div>
@@ -302,6 +303,33 @@
       </div>
     </div>
   </footer>
+
+  <!-- SIMPLE FILTER SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const pills = document.querySelectorAll('.filter-pills .pill');
+      const cards = document.querySelectorAll('.resource-card');
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          // activar pill seleccionada
+          pills.forEach(p => p.classList.remove('pill-active'));
+          pill.classList.add('pill-active');
+
+          const filter = pill.dataset.filter;
+
+          cards.forEach(card => {
+            const category = card.dataset.category; // ej. "analysis"
+            if (filter === 'all' || category === filter) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
