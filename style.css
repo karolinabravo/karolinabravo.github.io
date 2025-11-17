@@ -1032,24 +1032,3 @@ img {
     }
 }
 
-/* ===============================
-   CREATOR PORTFOLIO
-================================= */
-
-/* Minimal Creator Portfolio */
-
-.creator-minimal {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.creator-minimal-inner {
-  max-width: 46rem;
-}
-
-.creator-portfolio-btn {
-  margin-top: 1.4rem;
-  padding: 12px 30px;
-  border-radius: 40px;
-  font-size: 1rem;
-}
