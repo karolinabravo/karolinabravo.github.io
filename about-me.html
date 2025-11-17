@@ -36,90 +36,137 @@
   <!-- MAIN -->
   <main>
 
-    <!-- HERO ABOUT -->
-    <section class="section about-hero">
-      <div class="container">
-        <p class="section-kicker">About me</p>
-        <h1 class="section-title" style="font-size:1.9rem; margin-bottom:0.6rem;">
-          Data, tourism & digital content in one profile
-        </h1>
-        <p class="section-subtitle" style="max-width:42rem;">
-          I’m Karolina Bravo, a multidisciplinary profile combining tourism & hospitality
-          analytics with digital content creation for beauty and lifestyle brands.
-        </p>
+    <!-- HERO CENTRADO -->
+    <section class="section about-hero-center">
+      <div class="container about-hero-inner">
+
+        <!-- Avatar: si luego quieres foto, puedes cambiar este div por una <img> -->
+        <div class="about-avatar">
+          <span>KB</span>
+        </div>
+
+        <div class="about-hero-text">
+          <p class="section-kicker">ABOUT ME</p>
+          <h1 class="hero-title" style="margin-bottom:0.3rem;">
+            Karolina Bravo
+          </h1>
+          <p class="hero-subtitle">
+            Data & Tourism Analytics · UGC & Digital Creator
+          </p>
+        </div>
+
+        <div class="about-hero-buttons">
+          <!-- RUTA DE LOS PDF: cambia los href por la ruta real de tus CV -->
+          <a href="cv/Karolina_Bravo_CV_ES.pdf" class="btn btn-primary" target="_blank">
+            Download CV (ES)
+          </a>
+          <a href="cv/Karolina_Bravo_CV_EN.pdf" class="btn btn-secondary" target="_blank">
+            Download CV (EN)
+          </a>
+          <a href="https://www.linkedin.com/in/karolinabravo" target="_blank" class="btn btn-ghost">
+            View LinkedIn
+          </a>
+        </div>
+
       </div>
     </section>
 
-    <!-- ABOUT GRID -->
+    <!-- TARJETA PRINCIPAL ABOUT + STACK -->
     <section class="section">
-      <div class="container about-grid">
-
-        <!-- COLUMNA IZQUIERDA: BIO -->
-        <div>
-          <h2 class="section-title" style="font-size:1.2rem;">Who I am</h2>
+      <div class="container about-main-layout">
+        <article class="card about-main-card">
+          <h2 class="section-title" style="font-size:1.15rem;">About me</h2>
           <p class="section-subtitle" style="margin-bottom:1rem;">
-            I specialize in transforming complex data into actionable insights, especially
-            around tourism and hospitality in Barcelona, while also creating UGC and
-            digital content for brands in beauty, skincare, perfumes and lifestyle.
+            I’m Karolina Bravo, a multidisciplinary profile combining
+            <strong>tourism & hospitality analytics</strong> with <strong>digital content creation</strong>
+            for beauty and lifestyle brands.
           </p>
 
           <p>
-            My work sits at the intersection of
-            <strong>analytics, creativity and strategy</strong>: from forecasting hotel
-            occupancy and analyzing tourism flows to planning content that connects
-            with real people on TikTok, Instagram and YouTube.
+            I specialize in transforming complex data into <strong>actionable insights</strong>,
+            especially around tourism behaviour and hotel performance in Barcelona.
+            At the same time, I create <strong>UGC content</strong> for brands
+            in beauty, skincare, perfumes and lifestyle, designing pieces that feel real
+            and are aligned with each brand’s identity.
           </p>
 
-          <h2 class="section-title" style="font-size:1.2rem; margin-top:1.6rem;">What I do</h2>
+          <p style="margin-top:0.6rem;">
+            My work sits at the intersection of
+            <strong>analytics, creativity and strategy</strong>: from forecasting hotel
+            occupancy with open data sources to planning TikTok and Instagram content
+            that connects with real people.
+          </p>
+
+          <h3 class="section-title" style="font-size:1.05rem; margin-top:1.6rem;">What I do</h3>
           <ul class="about-list">
-            <li>Data analysis, forecasting and BI dashboards (Python, Power BI, GitHub, Colab)</li>
+            <li>Data analysis, forecasting & BI dashboards (Python, Power BI, GitHub, Colab)</li>
             <li>Tourism & hospitality analytics using AENA, INE, Dataestur, Frontur, Egatur</li>
-            <li>UGC content for beauty, skincare, perfumes, lifestyle and fashion</li>
-            <li>Digital storytelling, content strategy and personal branding</li>
+            <li>UGC content for beauty, skincare, perfumes, lifestyle & fashion</li>
+            <li>Digital storytelling, content strategy & personal branding</li>
           </ul>
 
-          <h2 class="section-title" style="font-size:1.2rem; margin-top:1.6rem;">Languages</h2>
+          <h3 class="section-title" style="font-size:1.05rem; margin-top:1.6rem;">Technical stack</h3>
+          <div class="pill-group about-stack-pills">
+            <span class="pill pill-active">Python</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Power BI</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Git · GitHub</span>
+            <span class="pill">Jupyter / Colab</span>
+            <span class="pill">Data cleaning & ETL</span>
+            <span class="pill">Forecasting</span>
+            <span class="pill">Dashboard design</span>
+          </div>
+
+          <h3 class="section-title" style="font-size:1.05rem; margin-top:1.6rem;">Languages</h3>
           <p>Spanish · English · Catalan · Russian</p>
 
-          <h2 class="section-title" style="font-size:1.2rem; margin-top:1.6rem;">Values</h2>
+          <h3 class="section-title" style="font-size:1.05rem; margin-top:1.6rem;">Values</h3>
           <ul class="about-list">
             <li>Data accuracy & analytical rigor</li>
             <li>Creativity & visual storytelling</li>
             <li>Professional ethics & responsible communication</li>
-            <li>Aesthetic, clean and functional design</li>
+            <li>Aesthetic, clean & functional design</li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- STATS (AÑÁDELOS COMO QUIERAS) -->
+    <section class="section">
+      <div class="container about-stats-grid">
+        <div class="about-stat-card">
+          <div class="about-stat-number">3+</div>
+          <div class="about-stat-label">Years mixing tourism & data</div>
         </div>
+        <div class="about-stat-card">
+          <div class="about-stat-number">2</div>
+          <div class="about-stat-label">Domains: Data Analytics & UGC</div>
+        </div>
+        <div class="about-stat-card">
+          <div class="about-stat-number">4</div>
+          <div class="about-stat-label">Languages I work in</div>
+        </div>
+      </div>
+    </section>
 
-        <!-- COLUMNA DERECHA: SNAPSHOT -->
-        <aside class="card about-side-card">
-          <p class="section-kicker" style="margin-bottom:0.4rem;">Snapshot</p>
-
-          <div class="about-side-item">
-            <span class="about-label">Current focus</span>
-            <span class="about-value">Tourism Analytics · Digital Creator</span>
+    <!-- CTA FINAL -->
+    <section class="section">
+      <div class="container">
+        <div class="about-cta-card">
+          <div>
+            <h2 class="section-title" style="margin-bottom:0.4rem;">
+              Let’s work together
+            </h2>
+            <p class="section-subtitle">
+              If you’re looking for someone who understands both
+              tourism analytics and digital content, I’d love to hear about your project.
+            </p>
           </div>
-
-          <div class="about-side-item">
-            <span class="about-label">Data stack</span>
-            <span class="about-value">Python · Pandas · Power BI · SQL · GitHub · Colab</span>
-          </div>
-
-          <div class="about-side-item">
-            <span class="about-label">Creator niche</span>
-            <span class="about-value">Beauty · Skincare · Perfumes · Lifestyle</span>
-          </div>
-
-          <div class="about-side-item">
-            <span class="about-label">Collaboration</span>
-            <span class="about-value">Remote · Worldwide</span>
-          </div>
-
-          <div class="about-side-item">
-            <span class="about-label">Open to</span>
-            <span class="about-value">Data/BI roles · Tourism analytics projects · Brand collaborations</span>
-          </div>
-        </aside>
-
+          <button class="btn btn-primary" onclick="window.location.href='contact.html'">
+            Contact me
+          </button>
+        </div>
       </div>
     </section>
 
