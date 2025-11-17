@@ -1036,156 +1036,20 @@ img {
    CREATOR PORTFOLIO
 ================================= */
 
-.creator-portfolio-hero {
-  padding-top: 4rem;
+/* Minimal Creator Portfolio */
+
+.creator-minimal {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
-.creator-portfolio-hero-inner {
-  text-align: center;
-  max-width: 50rem;
-  margin: 0 auto;
+.creator-minimal-inner {
+  max-width: 46rem;
 }
 
-.creator-portfolio-main-btn {
-  margin-top: 1.2rem;
-}
-
-/* Highlight cards */
-
-.creator-highlight-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
-}
-
-.creator-highlight-card {
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(148, 163, 184, 0.35);
-  background: radial-gradient(circle at top left, #111827, #020617);
-  padding: 1.2rem 1.1rem;
-}
-
-.creator-highlight-label {
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-  margin-bottom: 0.2rem;
-}
-
-.creator-highlight-value {
-  font-size: 0.98rem;
-  font-weight: 500;
-  margin-bottom: 0.3rem;
-}
-
-.creator-highlight-note {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-/* Media grid */
-
-.creator-media-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.3rem;
-}
-
-.creator-media-card {
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  gap: 1rem;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(148, 163, 184, 0.3);
-  background: radial-gradient(circle at top left, #020617, #020617);
-  padding: 1rem;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
-}
-
-.creator-media-thumb {
-  border-radius: var(--radius-md);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Placeholder backgrounds, cámbialos por imágenes reales cuando quieras */
-.creator-thumb-beauty {
-  background-image: linear-gradient(135deg, #f9a8d4, #38bdf8);
-}
-
-.creator-thumb-perfume {
-  background-image: linear-gradient(135deg, #f97316, #a855f7);
-}
-
-.creator-thumb-pijamas {
-  background-image: linear-gradient(135deg, #22c55e, #0ea5e9);
-}
-
-.creator-thumb-lifestyle {
-  background-image: linear-gradient(135deg, #facc15, #ec4899);
-}
-
-.creator-media-body .card-text {
-  font-size: 0.86rem;
-}
-
-.creator-media-tags {
-  margin-top: 0.4rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-/* How I work grid */
-
-.creator-how-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2rem;
-}
-
-/* CTA */
-
-.creator-cta {
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(148, 163, 184, 0.3);
-  background: radial-gradient(circle at top left, #111827, #020617);
-  padding: 1.6rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.creator-cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-/* Responsive */
-
-@media (max-width: 960px) {
-  .creator-highlight-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .creator-media-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .creator-media-card {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .creator-how-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .creator-cta {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.creator-portfolio-btn {
+  margin-top: 1.4rem;
+  padding: 12px 30px;
+  border-radius: 40px;
+  font-size: 1rem;
 }
