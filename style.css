@@ -1009,3 +1009,44 @@ img {
     gap: 1.5rem;
   }
 }
+
+/* ==== FIX: Portfolio buttons same size as global buttons ==== */
+
+.two-portfolio-buttons .portfolio-big-btn {
+    padding: 10px 24px !important;   /* mismo tamaño que los otros */
+    font-size: 16px !important;
+    border-radius: 40px !important;
+    min-width: 220px !important;     /* igualdad perfecta */
+    text-align: center;
+}
+
+/* primary blue button */
+.two-portfolio-buttons .btn-primary {
+    background: #24AFFF;
+    color: #001528;
+    box-shadow: 0 0 25px rgba(36, 175, 255, 0.35);
+}
+
+.two-portfolio-buttons .btn-primary:hover {
+    background: #1a93d6;
+    box-shadow: 0 0 35px rgba(36, 175, 255, 0.55);
+}
+
+/* layout */
+.two-portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .two-portfolio-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .two-portfolio-buttons .portfolio-big-btn {
+        width: 250px !important; /* centrado en móvil */
+    }
+}
