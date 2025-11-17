@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Portfolio | Karolina Bravo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">KB</div>
+        <span>Karolina Bravo</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="data-projects.html">Data Projects</a>
+        <a href="digital-creator.html">Digital Creator</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="about-me.html">About me</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="nav-cta" onclick="window.location.href='contact.html'">
+        Let’s work together
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="section portfolio-hero">
+      <div class="container">
+        <p class="section-kicker">Data Portfolio</p>
+        <h1 class="section-title" style="font-size:2rem; margin-bottom:0.6rem;">
+          Tourism & hospitality analytics projects
+        </h1>
+        <p class="section-subtitle" style="max-width:44rem;">
+          Here you’ll find my main projects related to tourism demand, hotel performance
+          and open data in Barcelona and beyond. This page will be the home for the
+          full tourism project you’re building.
+        </p>
+      </div>
+    </section>
+
+    <!-- DESTACADO PRINCIPAL: PROYECTO TURISMO -->
+    <section class="section">
+      <div class="container">
+        <article class="card">
+          <span class="card-tag">Tourism & hospitality</span>
+          <h2 class="card-title">Barcelona tourism demand & hotel analytics</h2>
+          <p class="card-text">
+            End-to-end project integrating multiple open data sources (AENA, INE,
+            Dataestur, Frontur, Egatur, weather, Airbnb, etc.) to analyse and forecast
+            hotel occupancy and tourism behaviour in Barcelona.
+          </p>
+
+          <ul class="list">
+            <li>Data pipeline design: raw → clean → merged datasets</li>
+            <li>Exploratory analysis, seasonality and demand patterns</li>
+            <li>Forecasting models for hotel occupancy (2026 horizon)</li>
+            <li>Dashboards & visualisations in Power BI</li>
+          </ul>
+
+          <div class="portfolio-card-actions">
+            <button class="btn btn-primary">
+              View notebook / case study (coming soon)
+            </button>
+            <button class="btn btn-secondary" onclick="window.open('https://github.com/karolinabravo', '_blank')">
+              View project repo
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIONES FUTURAS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">More data work</p>
+          <h2 class="section-title">Other analytics & BI projects</h2>
+          <p class="section-subtitle">
+            Space reserved for additional projects (dashboards, case studies, course work).
+            We can add cards here later for each new project you want to show.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-tag">Dashboards / BI</span>
+            <h3 class="card-title">Business & reporting dashboards</h3>
+            <p class="card-text">
+              Placeholder for Power BI dashboards and KPI reports. You can add links
+              to interactive visuals or PDFs here later.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="card-tag">Learning & course work</span>
+            <h3 class="card-title">Practice projects & case studies</h3>
+            <p class="card-text">
+              Placeholder for mini-projects, exercises and experiments in Python,
+              statistics, forecasting and visualisation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-column-title">Karolina Bravo</p>
+        <p>Data & Tourism Analytics · Digital Creator</p>
+      </div>
+
+      <div>
+        <p class="footer-column-title">Navigate</p>
+        <div class="footer-links">
+          <a href="data-projects.html">Data Projects</a>
+          <a href="digital-creator.html">Digital Creator</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="resources.html">Resources</a>
+          <a href="about-me.html">About me</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-column-title">Connect</p>
+        <div class="footer-links">
+          <a href="https://www.tiktok.com/@soykarolinabravo" target="_blank">TikTok</a>
+          <a href="https://www.instagram.com/soykarolinabravo" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@soykarolinabravo" target="_blank">YouTube</a>
+          <a href="https://www.linkedin.com/in/karolinabravo" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
