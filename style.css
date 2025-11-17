@@ -684,3 +684,128 @@ img {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* ===============================
+   DIGITAL CREATOR / UGC
+================================= */
+
+.creator-hero {
+  padding-top: 4rem;
+}
+
+.creator-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.creator-card {
+  background: radial-gradient(circle at top, #1d2446, #020617);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.creator-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.creator-stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.creator-stat-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Steps / process */
+
+.creator-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.step {
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  padding: 0.9rem 0.9rem;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.9);
+  font-size: 0.85rem;
+}
+
+.step-number {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent-soft);
+  margin-bottom: 0.4rem;
+}
+
+.step-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.step-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* CTA final */
+
+.creator-cta {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: radial-gradient(circle at top left, #111827, #020617);
+  padding: 1.4rem 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Listas de servicios */
+
+.list {
+  margin-top: 0.7rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding-left: 1.1rem;
+}
+
+.list li {
+  list-style: disc;
+  margin-bottom: 0.2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 880px) {
+  .creator-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .creator-steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .creator-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
