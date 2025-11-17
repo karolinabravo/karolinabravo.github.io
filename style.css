@@ -1045,3 +1045,20 @@ img {
   box-shadow: 0 0 20px rgba(94, 203, 255, 0.45);
   transform: translateY(-2px);
 }
+
+.portfolio-center {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.portfolio-btn {
+  font-weight: 500 !important;  /* evita negrita accidental */
+  padding: 0.9rem 2.4rem !important;
+  font-size: 1rem !important;
+  border-radius: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
