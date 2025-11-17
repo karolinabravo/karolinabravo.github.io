@@ -1032,3 +1032,16 @@ img {
     }
 }
 
+/* Creator Portfolio button (redirect to Canva) */
+.creator-canva-btn {
+  background: #34b8ff;
+  color: #001122;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.creator-canva-btn:hover {
+  background: #5ecbff;
+  box-shadow: 0 0 20px rgba(94, 203, 255, 0.45);
+  transform: translateY(-2px);
+}
