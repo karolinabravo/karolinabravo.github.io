@@ -2,135 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me • Karolina Bravo</title>
+  <title>About me | Karolina Bravo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="nav-left">
-      <a href="index.html" class="logo">
-        <div class="logo-circle">KB</div> Karolina Bravo
+    <div class="navbar-inner container">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">KB</div>
+        <span>Karolina Bravo</span>
       </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="data-projects.html">Data Projects</a>
+        <a href="digital-creator.html">Digital Creator</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="about-me.html" class="active">About me</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="nav-cta" onclick="window.location.href='contact.html'">
+        Let’s work together
+      </button>
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="data-projects.html">Data Projects</a>
-      <a href="digital-creator.html">Digital Creator</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="blog.html">Blog</a>
-      <a href="resources.html">Resources</a>
-      <a class="active" href="about-me.html">About me</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="contact.html" class="cta-button">Let’s work together</a>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero-about">
-    <h1><span class="accent">About me</span></h1>
-    <p class="subtitle">
-      Data · Tourism Analytics · Digital Creator
-    </p>
-  </section>
+  <!-- MAIN -->
+  <main>
 
-  <!-- MAIN CONTENT -->
-  <section class="about-container">
-
-    <div class="about-text">
-      <h2 class="section-title">Who I am</h2>
-      <p>
-        I’m Karolina Bravo — a multidisciplinary professional combining 
-        <strong>data analytics, tourism insights and digital content creation</strong>.  
-        I specialize in transforming complex data into actionable insights, 
-        particularly in tourism & hospitality analytics in Barcelona.
-      </p>
-
-      <p>
-        In parallel, I build high-impact <strong>UGC content</strong> for beauty, lifestyle and fashion brands, 
-        developing aesthetic visuals, reviews, and campaigns optimised for TikTok and Instagram.
-      </p>
-
-      <p>
-        My work sits at the intersection of <strong>analytics, creativity and strategy</strong>:  
-        from forecasting hotel occupancy for tourism research to creating digital content that drives brand engagement.
-      </p>
-
-      <h2 class="section-title">What I do</h2>
-      <ul class="about-list">
-        <li>📊 Data analysis, forecasting & BI dashboards (Python, Power BI, GitHub, Colab)</li>
-        <li>🏨 Tourism & hospitality analytics (AENA · INE · Dataestur · Frontur · Egatur)</li>
-        <li>🎥 UGC content for brands (beauty, lifestyle, fashion, skincare)</li>
-        <li>🧩 Digital strategy, storytelling & brand development</li>
-      </ul>
-
-      <h2 class="section-title">Languages</h2>
-      <p>Spanish · English · Catalan · Russian</p>
-
-      <h2 class="section-title">Values</h2>
-      <ul class="about-list">
-        <li>✨ Data accuracy & analytical rigor</li>
-        <li>✨ Creativity & visual storytelling</li>
-        <li>✨ Professional ethics & responsible communication</li>
-        <li>✨ Aesthetic, clean and functional design</li>
-      </ul>
-    </div>
-
-    <div class="about-side-box">
-      <h3>Quick snapshot</h3>
-      <div class="side-box-item">
-        <p class="label">Current focus</p>
-        <p class="value">Tourism Analytics · Digital Content</p>
+    <!-- HERO ABOUT -->
+    <section class="section about-hero">
+      <div class="container">
+        <p class="section-kicker">About me</p>
+        <h1 class="section-title" style="font-size:1.9rem; margin-bottom:0.6rem;">
+          Data, tourism & digital content in one profile
+        </h1>
+        <p class="section-subtitle" style="max-width:42rem;">
+          I’m Karolina Bravo, a multidisciplinary profile combining tourism & hospitality
+          analytics with digital content creation for beauty and lifestyle brands.
+        </p>
       </div>
+    </section>
 
-      <div class="side-box-item">
-        <p class="label">Tools</p>
-        <p class="value">Python · Power BI · GitHub · Excel · Colab</p>
+    <!-- ABOUT GRID -->
+    <section class="section">
+      <div class="container about-grid">
+
+        <!-- COLUMNA IZQUIERDA: BIO -->
+        <div>
+          <h2 class="section-title" style="font-size:1.2rem;">Who I am</h2>
+          <p class="section-subtitle" style="margin-bottom:1rem;">
+            I specialize in transforming complex data into actionable insights, especially
+            around tourism and hospitality in Barcelona, while also creating UGC and
+            digital content for brands in beauty, skincare, perfumes and lifestyle.
+          </p>
+
+          <p>
+            My work sits at the intersection of
+            <strong>analytics, creativity and strategy</strong>: from forecasting hotel
+            occupancy and analyzing tourism flows to planning content that connects
+            with real people on TikTok, Instagram and YouTube.
+          </p>
+
+          <h2 class="section-title" style="font-size:1.2rem; margin-top:1.6rem;">What I do</h2>
+          <ul class="about-list">
+            <li>Data analysis, forecasting and BI dashboards (Python, Power BI, GitHub, Colab)</li>
+            <li>Tourism & hospitality analytics using AENA, INE, Dataestur, Frontur, Egatur</li>
+            <li>UGC content for beauty, skincare, perfumes, lifestyle and fashion</li>
+            <li>Digital storytelling, content strategy and personal branding</li>
+          </ul>
+
+          <h2 class="section-title" style="font-size:1.2rem; margin-top:1.6rem;">Languages</h2>
+          <p>Spanish · English · Catalan · Russian</p>
+
+          <h2 class="section-title" style="font-size:1.2rem; margin-top:1.6rem;">Values</h2>
+          <ul class="about-list">
+            <li>Data accuracy & analytical rigor</li>
+            <li>Creativity & visual storytelling</li>
+            <li>Professional ethics & responsible communication</li>
+            <li>Aesthetic, clean and functional design</li>
+          </ul>
+        </div>
+
+        <!-- COLUMNA DERECHA: SNAPSHOT -->
+        <aside class="card about-side-card">
+          <p class="section-kicker" style="margin-bottom:0.4rem;">Snapshot</p>
+
+          <div class="about-side-item">
+            <span class="about-label">Current focus</span>
+            <span class="about-value">Tourism Analytics · Digital Creator</span>
+          </div>
+
+          <div class="about-side-item">
+            <span class="about-label">Data stack</span>
+            <span class="about-value">Python · Pandas · Power BI · SQL · GitHub · Colab</span>
+          </div>
+
+          <div class="about-side-item">
+            <span class="about-label">Creator niche</span>
+            <span class="about-value">Beauty · Skincare · Perfumes · Lifestyle</span>
+          </div>
+
+          <div class="about-side-item">
+            <span class="about-label">Collaboration</span>
+            <span class="about-value">Remote · Worldwide</span>
+          </div>
+
+          <div class="about-side-item">
+            <span class="about-label">Open to</span>
+            <span class="about-value">Data/BI roles · Tourism analytics projects · Brand collaborations</span>
+          </div>
+        </aside>
+
       </div>
+    </section>
 
-      <div class="side-box-item">
-        <p class="label">Creator niche</p>
-        <p class="value">Beauty · Lifestyle · UGC</p>
-      </div>
-
-      <div class="side-box-item">
-        <p class="label">Based in</p>
-        <p class="value">Barcelona · Remote Worldwide</p>
-      </div>
-    </div>
-
-  </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-row">
+    <div class="container footer-inner">
       <div>
         <p class="footer-column-title">Karolina Bravo</p>
-        <p>Data · BI · Tourism Analytics · UGC Creator</p>
-        <a href="#" class="footer-download">Download CV</a>
+        <p>Data & Tourism Analytics · Digital Creator</p>
       </div>
 
       <div>
-        <p class="footer-column-title">Navigation</p>
+        <p class="footer-column-title">Navigate</p>
         <div class="footer-links">
-          <a href="index.html">Home</a>
           <a href="data-projects.html">Data Projects</a>
           <a href="digital-creator.html">Digital Creator</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="blog.html">Blog</a>
+          <a href="resources.html">Resources</a>
           <a href="about-me.html">About me</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
 
       <div>
-        <p class="footer-column-title">Social</p>
+        <p class="footer-column-title">Connect</p>
         <div class="footer-links">
           <a href="https://www.tiktok.com/@soykarolinabravo" target="_blank">TikTok</a>
           <a href="https://www.instagram.com/soykarolinabravo" target="_blank">Instagram</a>
-          <a href="https://youtube.com" target="_blank">YouTube</a>
+          <a href="https://www.youtube.com/@soykarolinabravo" target="_blank">YouTube</a>
           <a href="https://www.linkedin.com/in/karolinabravo" target="_blank">LinkedIn</a>
         </div>
       </div>
