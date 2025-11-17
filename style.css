@@ -993,3 +993,37 @@ img {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Portfolio - two big buttons */
+
+.two-portfolio-buttons {
+  display: flex;
+  gap: 1.4rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.portfolio-big-btn {
+  padding: 1.2rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 999px;
+  min-width: 260px;
+  transition: 0.25s ease;
+}
+
+.portfolio-big-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(56,189,248,0.25);
+}
+
+@media (max-width: 880px) {
+  .two-portfolio-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-big-btn {
+    width: 90%;
+    text-align: center;
+  }
+}
