@@ -2,189 +2,317 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Karolina Bravo · Data & Digital</title>
+  <title>Karolina Bravo | Data & Digital Creator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio de Karolina Bravo – Data Analyst especializada en Turismo & Revenue Management y Creadora de Contenido UGC." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAVBAR -->
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="nav-logo">KB</div>
-    <nav class="nav-links">
-      <a href="#hero">Inicio</a>
-      <a href="#data">Portfolio Data</a>
-      <a href="#ugc">UGC & Content</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <div class="nav-inner container">
+      <a href="#top" class="logo">
+        <span class="logo-mark">KB</span>
+        <span class="logo-text">Karolina Bravo</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">Sobre mí</a>
+        <a href="#data">Data</a>
+        <a href="#ugc">UGC & Digital</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact" class="nav-cta">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <p class="hero-tag">Data · Turismo · Contenido Digital</p>
-      <h1>Karolina Bravo</h1>
-      <p class="hero-subtitle">
-        Data & Tourism Analytics · Revenue & Forecasting · UGC Content Creator
-      </p>
-      <div class="hero-buttons">
-        <a href="#data" class="btn primary">Ver Portfolio Data</a>
-        <a href="#ugc" class="btn ghost">Ver Portfolio UGC</a>
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">Data · Turismo · UGC Creator</p>
+          <h1>Data Analyst & Digital Creator<br /><span>con foco en Turismo y Revenue</span></h1>
+
+          <p class="hero-sub">
+            Conecto <strong>datos, estrategia y experiencia digital</strong> para ayudar a
+            marcas turísticas y de lifestyle a tomar mejores decisiones
+            y comunicar con más impacto.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#data" class="btn primary">Ver proyectos de Data</a>
+            <a href="#ugc" class="btn ghost">Ver proyectos UGC</a>
+          </div>
+
+          <div class="hero-tags">
+            <span>Hotel forecasting · Barcelona</span>
+            <span> dashboards · Power BI </span>
+            <span>UGC Beauty & Lifestyle</span>
+          </div>
+
+          <div class="hero-cv">
+            <span>CV:</span>
+            <!-- Cambiar links cuando tengas los PDFs -->
+            <a href="#" class="cv-link">Descargar CV (ES)</a>
+            <span class="sep">·</span>
+            <a href="#" class="cv-link">Download CV (EN)</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-photo-placeholder">
+            <!-- Aquí más adelante puedes poner una foto tuya -->
+            <span>Karolina Bravo</span>
+          </div>
+          <div class="hero-card-body">
+            <p class="hero-role">Actualmente</p>
+            <p class="hero-role-main">Data & Business Analytics (Turismo)</p>
+            <p class="hero-role-sub">
+              + Creadora UGC para marcas de belleza, skincare y lifestyle.
+            </p>
+            <div class="hero-pill-row">
+              <span class="pill">Barcelona</span>
+              <span class="pill">Remoto</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="hero-note">
-        Barcelona · Analista de datos enfocada en turismo y comportamiento del viajero.
-      </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- SOBRE MI -->
-  <section class="section" id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p class="section-text">
-      Soy analista de datos especializada en turismo y hotelería, con experiencia
-      trabajando datos de ocupación, vuelos, gasto turístico y clima para entender
-      cómo se mueve la demanda. Combino mi perfil técnico con una fuerte presencia
-      digital como creadora de contenido, lo que me permite explicar insights de
-      forma clara, visual y cercana.
-    </p>
-  </section>
-
-  <!-- PORTFOLIO DATA (RESUMEN) -->
-  <section class="section" id="data">
-    <div class="section-header">
-      <h2>Portfolio Data & Tourism Analytics</h2>
-      <p>Proyectos de predicción, modelado y visualización de datos turísticos.</p>
-    </div>
-
-    <div class="cards-grid">
-      <!-- Proyecto 1 -->
-      <article class="card">
-        <h3>Forecast Ocupación Hotelera · Barcelona 2026</h3>
-        <p>
-          Modelo predictivo profesional para estimar la ocupación hotelera mensual
-          en Barcelona (2017–2025) y forecast 2026. Integración de datos de
-          ocupación, vuelos, gasto y clima. Modelos: Ridge, Lasso, ElasticNet,
-          RandomForest y CatBoost.
-        </p>
-        <ul class="pill-list">
-          <li>Python</li>
-          <li>scikit-learn</li>
-          <li>CatBoost</li>
-          <li>Visualización</li>
-        </ul>
-        <div class="card-links">
-          <a href="#" target="_blank">Ver notebook</a>
-          <a href="#" target="_blank">Ver repositorio</a>
+    <!-- Sobre mí -->
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <h2>Sobre mí</h2>
+          <p>
+            Soy <strong>Karolina Bravo</strong>, analista de datos con background en
+            <strong>Turismo y Revenue Management</strong>, y creadora de contenido
+            digital. Me muevo entre <strong>modelos predictivos</strong>,
+            dashboards accionables y <strong>storytelling visual</strong>.
+          </p>
+          <p>
+            Trabajo especialmente con datos de <strong>hoteles, vuelos y
+            comportamiento turístico</strong>. Me interesa transformar datasets
+            complejos en narrativas claras para equipos de negocio, marketing
+            y dirección.
+          </p>
+          <p>
+            Paralelamente, desarrollo contenido UGC para marcas de
+            <strong>belleza, cuidado personal y lifestyle</strong>, uniendo mi
+            mirada analítica con creatividad y experiencia real de usuaria.
+          </p>
         </div>
-      </article>
-
-      <!-- Proyecto 2 -->
-      <article class="card">
-        <h3>Pipeline Datos Turismo Barcelona</h3>
-        <p>
-          Limpieza y unificación de múltiples fuentes (INE, AENA, AEMET, Frontur,
-          Egatur) en un dataset único listo para modelos de forecast y BI.
-        </p>
-        <ul class="pill-list">
-          <li>ETL</li>
-          <li>Pandas</li>
-          <li>Data Cleaning</li>
-          <li>Feature Engineering</li>
-        </ul>
-        <div class="card-links">
-          <a href="#" target="_blank">Ver notebook</a>
-          <a href="#" target="_blank">Ver repositorio</a>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <h3>Especialización en Turismo</h3>
+            <p>Forecast de ocupación, demanda y gasto turístico, con foco en Barcelona.</p>
+          </div>
+          <div class="highlight-card">
+            <h3>Modelado Predictivo</h3>
+            <p>Regresión, árboles, Random Forest, CatBoost y validación cruzada.</p>
+          </div>
+          <div class="highlight-card">
+            <h3>UGC & Branding</h3>
+            <p>Contenido nativo para TikTok & IG, enfoque en conversión y confianza.</p>
+          </div>
         </div>
-      </article>
-
-      <!-- Proyecto 3 (placeholder para futuro) -->
-      <article class="card">
-        <h3>Próximo proyecto</h3>
-        <p>
-          Espacio reservado para nuevos análisis (ej. dashboards, modelos de
-          clasificación de clientes, NLP, etc.).
-        </p>
-        <ul class="pill-list">
-          <li>Pronto</li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="section-cta">
-      <!-- Más adelante crearemos data.html -->
-      <a href="data.html" class="btn ghost">Ver Portfolio Data completo</a>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO UGC (RESUMEN) -->
-  <section class="section" id="ugc">
-    <div class="section-header">
-      <h2>UGC & Content</h2>
-      <p>
-        Contenido para marcas de belleza, cuidado personal y lifestyle, con enfoque
-        en storytelling honesto y visual aesthetic.
-      </p>
-    </div>
-
-    <div class="cards-grid">
-      <article class="card">
-        <h3>Contenido UGC para marcas de belleza</h3>
-        <p>
-          Videos cortos optimizados para TikTok e Instagram (unboxings, reseñas,
-          “get ready with me”, comparativas, etc.), manteniendo una estética nude,
-          limpia y cercana.
-        </p>
-        <ul class="pill-list">
-          <li>TikTok</li>
-          <li>Instagram Reels</li>
-          <li>Storytelling</li>
-        </ul>
-        <div class="card-links">
-          <a href="#" target="_blank">Ver portfolio UGC</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Productos digitales para creadores</h3>
-        <p>
-          Plantillas, media kits y recursos para ayudar a otros creadores a
-          profesionalizar sus colaboraciones con marcas.
-        </p>
-        <ul class="pill-list">
-          <li>Media Kit</li>
-          <li>Tarifarios</li>
-          <li>Plantillas</li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="section-cta">
-      <!-- Más adelante crearemos ugc.html -->
-      <a href="ugc.html" class="btn ghost">Ver Portfolio UGC completo</a>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="section" id="contacto">
-    <h2>Contacto</h2>
-    <p class="section-text">
-      ¿Te interesa hablar de proyectos de datos, turismo o colaboraciones de
-      contenido?
-    </p>
-    <div class="contact-grid">
-      <div>
-        <p><strong>Email:</strong> tuemail@ejemplo.com</p>
-        <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/karolinabravo</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/JenniferKarolina" target="_blank">JenniferKarolina</a></p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Portfolio Data -->
+    <section id="data" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Proyectos de Data & Analytics</h2>
+          <p>Turismo, hoteles, forecasting y visualización.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Forecast de Ocupación Hotelera · Barcelona 2026</h3>
+            <p>
+              Modelo predictivo con <strong>CatBoost y Random Forest</strong>
+              sobre datos de hoteles, vuelos, gasto turístico y clima para
+              pronosticar la ocupación mensual en Barcelona.
+            </p>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>CatBoost</li>
+              <li>Validación cruzada</li>
+            </ul>
+            <div class="card-links">
+              <a href="#" target="_blank">Ver notebook</a>
+              <a href="#" target="_blank">Ver repositorio</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Dashboard de Turismo · Barcelona</h3>
+            <p>
+              Integración de múltiples fuentes (AENA, INE, Egatur…) y creación
+              de un dashboard para visualizar la <strong>evolución de la
+              demanda turística</strong>.
+            </p>
+            <ul class="tag-list">
+              <li>Power BI</li>
+              <li>ETL</li>
+              <li>Storytelling con datos</li>
+            </ul>
+            <div class="card-links">
+              <a href="#" target="_blank">Ver dashboard</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Análisis de Gasto Turístico & Revenue</h3>
+            <p>
+              Modelado del <strong>gasto medio por turista</strong> según país
+              emisor, estacionalidad y otros factores, para apoyar estrategias
+              de pricing y segmentación.
+            </p>
+            <ul class="tag-list">
+              <li>Regresión</li>
+              <li>Feature engineering</li>
+              <li>Turismo</li>
+            </ul>
+            <div class="card-links">
+              <a href="#" target="_blank">Ver análisis</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio UGC -->
+    <section id="ugc" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>UGC & Creadora Digital</h2>
+          <p>Contenido auténtico para marcas de belleza, skincare y lifestyle.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>UGC para marcas de Belleza & Skincare</h3>
+            <p>
+              Videos tipo TikTok/IG Reels, reseñas honestas, unboxings y
+              testimonios guiados a <strong>conversión y confianza</strong>.
+            </p>
+            <ul class="tag-list">
+              <li>TikTok</li>
+              <li>UGC</li>
+              <li>Beauty</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://soykarolinabravo-ugc.my.canva.site/" target="_blank">
+                Ver portfolio UGC
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Brand Storytelling & Scripts</h3>
+            <p>
+              Guiones cortos y estratégicos para anuncios, orgánico y colaboraciones,
+              alineados con la voz de marca y objetivos de campaña.
+            </p>
+            <ul class="tag-list">
+              <li>Copy</li>
+              <li>Storytelling</li>
+              <li>Marketing</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Educación & Recursos para Creadores</h3>
+            <p>
+              Plantillas, hojas de tarifas y recursos para nuevas creadoras UGC
+              que quieren profesionalizar su negocio.
+            </p>
+            <ul class="tag-list">
+              <li>Plantillas</li>
+              <li>Notion / Canva</li>
+              <li>Negociación</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Blog & Notas</h2>
+          <p>Ideas rápidas sobre datos, turismo y creación de contenido.</p>
+        </div>
+
+        <div class="blog-list">
+          <article class="blog-item">
+            <h3>Cómo usar forecasting de ocupación para tomar decisiones de Revenue</h3>
+            <p>
+              Una explicación sencilla de cómo un modelo como el que he construido
+              para Barcelona puede apoyar decisiones de pricing, staffing y marketing.
+            </p>
+            <span class="blog-meta">Data · Turismo</span>
+          </article>
+
+          <article class="blog-item">
+            <h3>Qué buscan las marcas cuando trabajan con creadoras UGC</h3>
+            <p>
+              Desde la perspectiva de creadora y analista: métricas, autenticidad
+              y tipos de contenido que realmente convierten.
+            </p>
+            <span class="blog-meta">UGC · Marketing</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contacto & Redes</h2>
+          <p>
+            Abierta a oportunidades en Data, Turismo, Revenue Management y colaboraciones UGC.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <p class="contact-text">
+              ¿Te gustaría colaborar, revisar un proyecto o hablar de datos y turismo?
+              Puedes escribirme por LinkedIn o email.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:tuemail@example.com" class="contact-link">Email</a>
+            <a href="https://www.linkedin.com" target="_blank" class="contact-link">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="contact-link">GitHub</a>
+            <a href="https://www.tiktok.com" target="_blank" class="contact-link">TikTok</a>
+            <a href="https://www.instagram.com" target="_blank" class="contact-link">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Karolina Bravo · Data & Digital</p>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Karolina Bravo</span>
+      <span class="footer-small">Data · Turismo · Digital Creator</span>
+    </div>
   </footer>
 
   <script>
-    // año automático
+    // Año automático en el footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
