@@ -1477,3 +1477,152 @@ img {
 .kb-blog-card-body {
   padding: 1rem 1.2rem;
 }
+
+
+/* ========= KB BLOG – Latest + All posts (carrusel + cards) ========= */
+
+/* Sección genérica */
+.kb-blog-section {
+  padding: 3.5rem 0;
+}
+
+.kb-blog-header {
+  margin-bottom: 1.5rem;
+}
+
+.kb-blog-section .section-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.kb-blog-section .section-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* Pills del hero (todas gris por defecto, azul en hover) */
+.blog-hero-meta .pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.blog-hero-meta .pill:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ===== LATEST ARTICLES – carrusel horizontal ===== */
+
+.kb-blog-carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.kb-blog-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+.kb-blog-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.kb-blog-carousel::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 999px;
+}
+
+/* Tarjeta tipo carrusel */
+.kb-blog-card {
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+  color: var(--text-main);
+  overflow: hidden;
+}
+
+/* Latest: una tarjeta “ancha” en horizontal */
+.kb-blog-card-horizontal {
+  flex: 0 0 360px;          /* ancho de cada card en el carrusel */
+  min-width: 320px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Parte superior de color */
+.kb-blog-card-visual {
+  height: 140px;
+}
+
+/* Gradientes de colores */
+.kb-grad-1 {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+}
+.kb-grad-2 {
+  background: linear-gradient(135deg, #22c55e, #06b6d4);
+}
+.kb-grad-3 {
+  background: linear-gradient(135deg, #f97316, #ec4899);
+}
+.kb-grad-4 {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+}
+
+/* Cuerpo (parte oscura con texto) */
+.kb-blog-card-body {
+  padding: 1rem 1.2rem 1.2rem;
+  background: rgba(15, 23, 42, 0.96);
+  border-top: 1px solid rgba(15, 23, 42, 0.9);
+}
+
+.kb-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.kb-blog-card-body h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.4rem;
+}
+
+.kb-blog-card-body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.7rem;
+}
+
+.kb-readmore {
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+/* ===== ALL POSTS – grid de tarjetas debajo ===== */
+
+.kb-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.kb-blog-grid .kb-blog-card {
+  flex: 1 1 auto;
+}
+
+/* En móvil, las cards del carrusel ocupan el ancho completo */
+@media (max-width: 768px) {
+  .kb-blog-card-horizontal {
+    flex: 0 0 85%;
+  }
+}
