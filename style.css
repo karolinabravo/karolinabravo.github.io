@@ -1552,6 +1552,7 @@ img {
 }
 
 
+
 /* ========= BLOG POST · DARK ELEGANT ========= */
 
 .blog-post-main {
@@ -1660,3 +1661,16 @@ img {
     font-size: 1.5rem;
   }
 }
+
+/* Autor del blog, bajo el hero */
+.blog-author-label {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.blog-author-label span {
+  color: var(--accent-soft);
+  font-weight: 500;
+}
+
