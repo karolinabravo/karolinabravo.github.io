@@ -1560,3 +1560,32 @@ img {
   color: var(--accent-soft);
 }
 
+
+/* Restore Latest Articles horizontal slider */
+.latest-articles-list,
+.blog-cards-carousel,
+.carousel-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  gap: 1.5rem !important;
+  scroll-snap-type: x mandatory !important;
+  padding-bottom: 0.5rem;
+}
+
+.latest-article-card,
+.blog-card {
+  flex: 0 0 300px !important;
+  scroll-snap-align: start;
+}
+
+.latest-articles-list::-webkit-scrollbar,
+.carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.latest-articles-list::-webkit-scrollbar-thumb,
+.carousel-track::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
