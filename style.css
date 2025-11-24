@@ -1192,13 +1192,38 @@ img {
   color: var(--text-muted);
 }
 
-/* Carousel tipo lista vertical de tarjetas anchas */
 
+/* Carousel tipo carrusel horizontal */
 .kb-blog-carousel {
   display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
+  flex-direction: row;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.9rem;
+  scroll-snap-type: x mandatory;
 }
+
+/* opcional: barra de scroll más discreta */
+.kb-blog-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+.kb-blog-carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.kb-blog-carousel::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 999px;
+}
+
+/* cada tarjeta ocupa ancho fijo para que se vea el carrusel */
+.kb-blog-card-horizontal {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  min-width: min(540px, 100%);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
 
 /* Grid de "All posts" debajo */
 
