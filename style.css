@@ -1550,3 +1550,113 @@ img {
     font-size: 1.5rem;
   }
 }
+
+
+/* ========= BLOG POST · DARK ELEGANT ========= */
+
+.blog-post-main {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.blog-post-shell {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.blog-post-back {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.blog-post-back:hover {
+  color: var(--accent-soft);
+}
+
+/* Tarjeta principal del artículo */
+.blog-post-card {
+  background: radial-gradient(circle at top left, #111827, #020617);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem 2rem 2.4rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Cabecera */
+.blog-post-header {
+  margin-bottom: 2rem;
+}
+
+.blog-post-eyebrow {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent-soft);
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-title {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
+
+.blog-post-meta {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Hero tipo gradiente (sin imagen) */
+.blog-post-hero {
+  margin-top: 1.4rem;
+  height: 170px;
+  border-radius: 1.1rem;
+  background: linear-gradient(135deg, #008cff44, #0ea5e944, #6366f144);
+}
+
+/* Cuerpo del post */
+.blog-post-body {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--text-main);
+}
+
+.blog-post-section {
+  margin-bottom: 1.8rem;
+}
+
+.blog-post-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+}
+
+/* Listas dentro del post */
+.blog-post-body ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-body li {
+  margin-bottom: 0.25rem;
+  color: var(--text-muted);
+}
+
+/* Conclusión con borde sutil */
+.blog-post-conclusion {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.4rem;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .blog-post-card {
+    padding: 1.8rem 1.4rem 2.1rem;
+  }
+
+  .blog-post-title {
+    font-size: 1.5rem;
+  }
+}
