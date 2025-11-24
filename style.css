@@ -1393,3 +1393,87 @@ img {
   padding-top: 1.5rem;
   border-top: 1px solid rgba(148, 163, 184, 0.25);
 }
+
+/* ====== KB BLOG FIXES ====== */
+
+/* Pills: visuales */
+.blog-hero-meta .pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(148,163,184,0.25);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.blog-hero-meta .pill:hover {
+  background: rgba(56,189,248,0.15);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.blog-hero-meta .pill.active {
+  background: rgba(56,189,248,0.25);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ======= Latest articles – carrusel ======= */
+.kb-blog-carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.kb-blog-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+.kb-blog-carousel::-webkit-scrollbar-thumb {
+  background: rgba(148,163,184,0.4);
+  border-radius: 999px;
+}
+
+/* Cards en el carrusel */
+.kb-blog-card-horizontal {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  flex: 0 0 560px;
+  scroll-snap-align: start;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  overflow: hidden;
+}
+
+.kb-blog-card-visual {
+  height: 140px;
+}
+
+/* ======= All posts grid ======= */
+.kb-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.kb-blog-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.kb-blog-card-visual {
+  height: 130px;
+  background-size: cover;
+}
+
+.kb-blog-card-body {
+  padding: 1rem 1.2rem;
+}
