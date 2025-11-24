@@ -1546,3 +1546,17 @@ img {
   background-repeat: no-repeat;
 }
 
+.blog-featured-tag {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.blog-featured-btn {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.blog-featured-btn:hover {
+  color: var(--accent-soft);
+}
+
