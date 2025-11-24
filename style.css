@@ -1589,3 +1589,30 @@ img {
   background: rgba(255,255,255,0.2);
   border-radius: 4px;
 }
+
+/* Blog category pills */
+.blog-hero-meta .pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(148,163,184,0.25);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover = azul bonito */
+.blog-hero-meta .pill:hover {
+  background: rgba(56,189,248,0.15); /* cian suave */
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Active pill = azul destacado */
+.blog-hero-meta .pill.active {
+  background: rgba(56,189,248,0.25);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+}
