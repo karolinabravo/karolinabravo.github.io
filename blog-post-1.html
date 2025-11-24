@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How Data Can Improve the Hotel Industry in Barcelona | Karolina Bravo</title>
 
-  <!-- IMPORTANTE: el nombre del archivo CSS debe ser exactamente style.css -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Importa tu CSS global -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container navbar-inner">
@@ -24,37 +27,41 @@
         <a href="portfolio.html">Portfolio</a>
         <a href="blog.html" class="active">Blog</a>
         <a href="resources.html">Resources</a>
-        <a href="about.html">About</a>
+        <a href="about.html">About me</a>
         <a href="contact.html">Contact</a>
       </nav>
 
       <div class="nav-right">
-        <a href="contact.html" class="btn btn-small">Let’s talk</a>
+        <a href="contact.html" class="btn btn-small">Let’s work together</a>
       </div>
     </div>
   </header>
 
-  <!-- CONTENIDO DEL POST -->
-  <main class="blog-post-main">
-    <div class="container blog-post-shell">
+  <!-- ============ POST CONTENT ============ -->
+
+  <main class="blog-post-wrapper">
+    <div class="container">
+
       <a href="blog.html" class="blog-post-back">← Back to blog</a>
 
       <article class="blog-post-card">
-        <header class="blog-post-header">
-          <p class="blog-post-eyebrow">Tourism Analytics · EN</p>
-          <h1 class="blog-post-title">
-            How Data Can Improve the Hotel Industry in Barcelona
-          </h1>
-          <p class="blog-post-meta">
-            By Karolina Bravo · Data &amp; Tourism Analytics
-          </p>
 
-          <!-- Hero visual (degradado elegante, sin imagen) -->
-          <div class="blog-post-hero"></div>
+        <!-- HEADER -->
+        <header class="blog-post-header">
+          <p class="blog-post-category">Tourism Analytics · EN</p>
+          <h1 class="blog-post-title">How Data Can Improve the Hotel Industry in Barcelona</h1>
+          <p class="blog-post-author">By Karolina Bravo · Data & Tourism Analytics</p>
         </header>
 
+        <!-- HERO IMAGE -->
+        <figure class="blog-post-hero">
+          <img src="images/bcn-hotels-data-hero.png" alt="Barcelona tourism data and hotels">
+        </figure>
+
+        <!-- BODY -->
         <div class="blog-post-body">
-          <section class="blog-post-section">
+
+          <section>
             <p>
               The tourism industry in Barcelona is one of the most dynamic in Europe. Millions of international
               visitors arrive each year, hotel demand shifts month by month, and occupancy levels depend on dozens
@@ -62,18 +69,13 @@
             </p>
             <p>
               Hotels that understand how to interpret tourism data can make better decisions, anticipate demand,
-              optimise revenue, and adapt their strategy to changing market conditions. This article explores how
-              data can directly improve hotel performance in Barcelona, using examples from air arrivals, occupancy
-              patterns and market behaviour.
+              optimise revenue, and adapt their strategy to changing market conditions.
             </p>
           </section>
 
-          <section class="blog-post-section">
+          <section>
             <h2>1. Understanding demand before it happens</h2>
-            <p>
-              One of the biggest challenges for hotels is uncertainty. Demand can rise or fall depending on factors
-              such as:
-            </p>
+            <p>Demand rises or falls due to:</p>
             <ul>
               <li>flight arrivals from key markets</li>
               <li>seasonality</li>
@@ -82,112 +84,62 @@
               <li>international economic changes</li>
             </ul>
             <p>
-              Using datasets such as AENA air arrivals, hotels can detect which markets are growing. For example,
-              a clear increase in U.S. or German passengers often anticipates higher hotel occupancy in Barcelona,
-              especially in 4&#42; and 5&#42; categories.
-            </p>
-            <p>
-              When hotels analyse this data, they gain visibility weeks or even months before demand appears.
+              AENA air arrival data shows which markets are growing. For example, increases in U.S. and German
+              passengers often anticipate higher hotel occupancy in Barcelona.
             </p>
           </section>
 
-          <section class="blog-post-section">
+          <section>
             <h2>2. Adapting pricing strategies with real data</h2>
-            <p>
-              Revenue management is no longer based only on historical averages. Today, hotels can update prices
-              dynamically by combining:
-            </p>
+            <p>Hotels can combine:</p>
             <ul>
-              <li>occupancy data from INE</li>
+              <li>INE occupancy data</li>
               <li>demand curves</li>
               <li>competitor performance</li>
-              <li>forecasted flight arrivals</li>
-              <li>weather impact</li>
+              <li>flight arrival forecasts</li>
+              <li>weather patterns</li>
             </ul>
             <p>
-              If the data shows a strong increase in long-haul flights in a specific month, hotels can adjust ADR
-              earlier and capture higher revenue.
-            </p>
-            <p>
-              In Barcelona, long-distance markets (USA, Latin America, Asia) have a significant impact on price
-              elasticity, and data allows hotels to take advantage of it.
+              When long-haul flights increase, hotels can adjust ADR earlier to capture revenue opportunities.
             </p>
           </section>
 
-          <section class="blog-post-section">
+          <section>
             <h2>3. Improving operational planning</h2>
-            <p>
-              Data helps hotels avoid classic operational problems:
-            </p>
+            <p>Data helps prevent:</p>
             <ul>
-              <li>understaffing during high-demand weeks</li>
-              <li>overspending when the market is soft</li>
-              <li>poor allocation of housekeeping, F&amp;B or front-office shifts</li>
+              <li>understaffing in peak weeks</li>
+              <li>overspending in low demand</li>
+              <li>poor allocation of F&B, housekeeping or front-office teams</li>
             </ul>
-            <p>
-              By integrating occupancy forecasts and historical patterns, hotels can create more efficient schedules
-              and reduce operational costs.
-            </p>
-            <p>
-              In hospitality, even a 2–3% improvement in occupancy forecasting can save thousands of euros monthly.
-            </p>
           </section>
 
-          <section class="blog-post-section">
+          <section>
             <h2>4. Identifying seasonality with precision</h2>
-            <p>
-              Barcelona is a city with strong tourism cycles, but seasonality is not as simple as “high season vs
-              low season”.
-            </p>
-            <p>
-              With proper data analysis, hotels can identify:
-            </p>
+            <p>Hotels can detect:</p>
             <ul>
-              <li>micro-seasonality inside each month</li>
-              <li>weekdays with higher demand from specific markets</li>
-              <li>periods where weather strongly affects reservations</li>
-              <li>unexpected dips that require early action</li>
+              <li>micro-seasonality by month</li>
+              <li>high-demand weekdays for specific markets</li>
+              <li>weather-related booking variability</li>
+              <li>unexpected demand dips</li>
             </ul>
-            <p>
-              This level of detail allows hotels to position themselves better in periods that are traditionally
-              unpredictable, such as early spring or late autumn.
-            </p>
           </section>
 
-          <section class="blog-post-section">
+          <section>
             <h2>5. Creating more segmented and effective marketing</h2>
             <p>
-              Data reveals who is coming, from where, and when — which makes marketing more efficient.
-            </p>
-            <p>For example:</p>
-            <ul>
-              <li>If Nordic arrivals rise in September, target campaigns to that market.</li>
-              <li>If U.S. travellers extend stays during summer, promote long-stay offers.</li>
-              <li>
-                If weather improves last-minute bookings in spring, push digital campaigns at the right moment.
-              </li>
-            </ul>
-            <p>
-              Marketing without data is guesswork. Marketing with data is strategy.
+              Data reveals who comes, when, and from where — allowing hotels to target campaigns more efficiently.
             </p>
           </section>
 
-          <section class="blog-post-section blog-post-conclusion">
+          <section class="blog-post-conclusion">
             <h2>Conclusion</h2>
             <p>
-              Data gives hotels clarity, anticipation and control. In a destination as competitive and international
-              as Barcelona, using data is not a luxury — it is the difference between reacting late and leading the
-              market.
-            </p>
-            <p>
-              By analysing air arrivals, occupancy, seasonality and market behaviour, hotels can optimise their
-              strategy, improve guest experience and increase profitability.
-            </p>
-            <p>
-              This article is part of my ongoing work on tourism analytics and hotel demand forecasting. Soon, I will
-              share more insights and interactive dashboards that explore Barcelona’s tourism patterns in depth.
+              Data gives hotels clarity, anticipation and control. In a competitive and international city like
+              Barcelona, data-driven decision-making is not optional — it is the key to staying ahead.
             </p>
           </section>
+
         </div>
       </article>
     </div>
@@ -198,7 +150,7 @@
     <div class="container footer-inner">
       <div class="footer-left">
         <div class="footer-column-title">Karolina Bravo</div>
-        <p>Data &amp; Tourism Analytics · Digital Creator</p>
+        <p>Data & Tourism Analytics · Digital Creator</p>
       </div>
       <div class="footer-right">
         <div>
@@ -216,5 +168,7 @@
       </div>
     </div>
   </footer>
+
 </body>
+
 </html>
