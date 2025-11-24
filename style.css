@@ -1499,10 +1499,12 @@ img {
 }
 
 .blog-post-hero img {
-  display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 16/7; /* más vertical */
+  object-fit: cover;
 }
+
 
 /* Body */
 .blog-post-body h2 {
@@ -1543,3 +1545,4 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
